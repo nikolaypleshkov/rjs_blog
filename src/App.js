@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/page/home';
 
 function App() {
+
+  // const [error, setError] = useState(null);
+  // const [isLoaded, setIsLoaded] = useState(false);
+  // const [data, setData] = useState(null);
+  // const [btnState, setBtnState] = useState(false);
+  
+  // useEffect(() => {
+  //   fetch('/api').then(res => res.json())
+  //   .then((result) => {
+  //     setIsLoaded(true);
+  //     setData(result.message);
+  //   },
+  //    (error) => {
+  //     setIsLoaded(false);
+  //     setError(error);
+  //   });
+  // }, []);
+
+  // function reqData(){
+  //    setBtnState(true);
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Home />
   );
 }
 
