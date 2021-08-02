@@ -8,6 +8,12 @@ h1{
 a{
     text-decoration: none;
 }
+.header-txt{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 600;
+    color: #304ffe;
+    margin-left: 25%;
+}
 .nb-title-left{
     float: none;
     position: absolute;
@@ -55,7 +61,6 @@ a{
 
 .hasDropdown-2:hover .dropdown{
     display: flex;
-    transition: 1.5s ease-in;
 }
 
 .hasDropdown-1:hover .dropdown-gr{
@@ -145,6 +150,8 @@ nav{
         transform: translateX(-850px);
         transition: 0.5s ease-in;
         position: absolute;
+        background: #fff;
+        z-index: 30;
     }
     .navlinks-wrapper{
         display: block;
@@ -183,7 +190,7 @@ nav{
     .nb-btn-group-right{
        flex-wrap: wrap;
        margin-left: -35%;
-       margin-top: 80%;
+       margin-top: 90%;
        justify-content: center;
     }
     .nb-btn-group-right a{
@@ -191,7 +198,10 @@ nav{
     }
 
     .dropdown{
-        pointer-events: none;
+        top: 90%;
+        width: 90%;
+        left: 0;
+        box-shadow: none;
     }
     .dropdown-gr{
         top: 70%;
@@ -206,10 +216,12 @@ nav{
     .set-mt{
         position: absolute;
         bottom: -225px;
+        transition: 0.3s ease-in;
     }
     .set-mt2{
         position: absolute;
         top: 365px;
+        transition: 0.3s ease-in;
     }
 
   }
