@@ -1,5 +1,5 @@
-const loggedReducer = (state = false, action) => {
+const openLogin = (state = false, action) => {
     return !state
 };
 
-export default loggedReducer;
+export default openLogin;

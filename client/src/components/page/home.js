@@ -1,14 +1,19 @@
 import React from 'react'
 import LoginModal from '../Login/login-modal'
 import Navbar from '../Navbar/navbar'
-import {openLogin} from '../../actions';
+import {openModal} from '../../actions';
+import { openRegister } from '../../actions/register';
+import Register from '../Register/register-modal';
+import { useSelector } from 'react-redux';
 
 function Home() {
+    const modalReducer = useSelector((state) => state.modalReducer);
+    const modalRegiser = useSelector((regState) => regState.modalRegiser);
     return (
         <div>
             <Navbar />
-            {openLogin ?  <LoginModal /> : ''}
-           
+            {modalReducer  ?  <LoginModal /> : ''}
+            {modalRegiser ? <Register />    : ''}
         </div>
     )
 }

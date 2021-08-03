@@ -1,18 +1,33 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Button, ButtonLogin } from "../Buttons/priamry-btn";
-import { openLogin } from "../../actions";
+import { openLogin,closeLogin, openRegister,closeRegister } from "../../actions";
 import { useSelector, useDispatch } from "react-redux";
+import UserMenu from "../User/user-menu";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [dropdow, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
-  const isLogged = useSelector((state) => state.isLogged);
+  const modalReducer = useSelector((state) => state.modalReducer);  
+  const modalRegiser = useSelector((regState) => regState.modalRegiser);
   const dispatch = useDispatch();
+  const newdispatch = useDispatch();
+  const user = false;
+  const btnGroup = (
+    <div
+    className={
+      dropdow ? "nb-btn-group-right set-mt2" : "nb-btn-group-right"
+    }
+  >
+ 
+    <ButtonLogin onClick={() => {dispatch(openLogin()); if(openRegister === 'OPEN_REGISTER' && openLogin === 'OPEN_LOGIN') newdispatch(closeRegister())}}>Вход</ButtonLogin>
+    <Button onClick={() => {dispatch(openRegister()); if(openLogin === 'OPEN_LOGIN') dispatch(closeLogin())}}>Регистрация</Button>
+  </div>
+  );
   return (
     <div>
-      <nav className={toggleMenu && isLogged ? "nav-active" : ""}>
+      <nav className={toggleMenu && !modalReducer && !modalRegiser ? "nav-active" : ""}>
         <div className="nb-title-left">
           <a href="#home">
             <h1 className="header-txt">DEVBLOG</h1>
@@ -76,14 +91,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div
-          className={
-            dropdow ? "nb-btn-group-right set-mt2" : "nb-btn-group-right"
-          }
-        >
-          <ButtonLogin onClick={() => dispatch(openLogin())}>Вход</ButtonLogin>
-          <Button>Регистрация</Button>
-        </div>
+        {!user ? <UserMenu /> : btnGroup}
       </nav>
       <div
         className={

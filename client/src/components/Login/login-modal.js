@@ -1,15 +1,16 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Button } from "../Buttons/priamry-btn";
-import { closeLogin } from "../../actions";
+import { closeLogin} from "../../actions";
 import "./Login.css";
 
 function LoginModal() {
-  const isLogged = useSelector((state) => state.isLogged);
+  const modalReducer = useSelector((state) => state.modalReducer);
   const dispatch = useDispatch();
-  if (!isLogged) {
+        
+  if (modalReducer) {
     return (
-      <div class={closeLogin === true ? "lg-card d-n" : "lg-card"}>
+      <div class={closeLogin === 'CLOSE_LOGIN' ? "lg-card d-n" : "lg-card"}>
         <button
           type="button"
           className="close"

@@ -153,6 +153,9 @@ nav{
         background: #fff;
         z-index: 30;
     }
+    .header-txt{
+        margin-left: 0%;
+    }
     .navlinks-wrapper{
         display: block;
     }
