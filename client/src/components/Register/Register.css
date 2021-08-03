@@ -1,0 +1,67 @@
+.rg-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+}
+
+.d-n {
+    display: none;
+}
+
+.lg-title {
+    color: rgb(75, 75, 75);
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.lg-data-label {
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #304ffe;
+    color: #00c3ff;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-top: 5%;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+
+@media screen and (max-width: 1124px) {
+    .rg-card {
+        width: 70%;
+        height: 60vh;
+    }
+    input{
+        width: 85%;
+    }
+    .card-title h1{
+        font-size: 25px;
+    }
+    .form-data-validation{
+        margin-top: 15%;
+    }
+    .form-group{
+        margin-top: 15%;
+    }
+}
