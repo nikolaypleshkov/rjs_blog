@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Button, ButtonLogin } from "../Buttons/priamry-btn";
-import { openLogin,closeLogin, openRegister,closeRegister } from "../../actions";
+import { openLogin,closeLogin, openRegister } from "../../actions";
 import { useSelector, useDispatch } from "react-redux";
 import UserMenu from "../User/user-menu";
 
@@ -12,7 +12,6 @@ function Navbar() {
   const modalReducer = useSelector((state) => state.modalReducer);  
   const modalRegiser = useSelector((regState) => regState.modalRegiser);
   const dispatch = useDispatch();
-  const newdispatch = useDispatch();
   const user = false;
   const btnGroup = (
     <div
@@ -21,8 +20,8 @@ function Navbar() {
     }
   >
  
-    <ButtonLogin onClick={() => {dispatch(openLogin()); if(openRegister === 'OPEN_REGISTER' && openLogin === 'OPEN_LOGIN') newdispatch(closeRegister())}}>Вход</ButtonLogin>
-    <Button onClick={() => {dispatch(openRegister()); if(openLogin === 'OPEN_LOGIN') dispatch(closeLogin())}}>Регистрация</Button>
+    <ButtonLogin onClick={() => {dispatch(openLogin());}}>Вход</ButtonLogin>
+    <Button onClick={() => {dispatch(openRegister()); dispatch(closeLogin())}}>Регистрация</Button>
   </div>
   );
   return (
