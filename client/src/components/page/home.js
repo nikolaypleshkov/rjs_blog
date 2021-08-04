@@ -1,8 +1,6 @@
 import React from 'react'
 import LoginModal from '../Login/login-modal'
 import Navbar from '../Navbar/navbar'
-import {openModal} from '../../actions';
-import { openRegister } from '../../actions/register';
 import Register from '../Register/register-modal';
 import { useSelector } from 'react-redux';
 

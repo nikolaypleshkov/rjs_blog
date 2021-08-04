@@ -91,7 +91,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        {!user ? <UserMenu /> : btnGroup}
+        {user ? <UserMenu /> : btnGroup}
       </nav>
       <div
         className={

@@ -57,6 +57,10 @@ a{
     justify-content: flex-start;
     margin-top: 10%;
     margin-left: -15%;
+    
+}
+ul{
+    list-style: none;
 }
 
 .hasDropdown-2:hover .dropdown{
@@ -227,9 +231,6 @@ nav{
         transition: 0.3s ease-in;
     }
 
-  }
-
-  .toggle{
   }
 
   .toggle .line1{

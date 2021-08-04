@@ -1,0 +1,63 @@
+.menu-container{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 2.5%;
+   
+}
+
+.profile-picture-container{
+    border: 1px solid rgb(75, 75, 75);
+    position: absolute;
+    left: -17%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url('../../img/profile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-container{
+    cursor: pointer;
+    
+}
+.dropdown3{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    z-index: 12;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+    transition: 1.3s ease-in;
+    width: 9vw;
+}
+
+.dropdown-links3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-left: -5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dropdown-links3 li a{
+    color: rgb(75, 75, 75);
+}
+a{
+    text-decoration: none;
+}
+.dropdown-links3 li a:hover{
+    color: #304ffe;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.set-d-n{
+    display: none !important;
+}
