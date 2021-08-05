@@ -1,0 +1,11 @@
+.table-container{
+    width: 1300px;
+    height: 800px;
+    background-color: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
+}

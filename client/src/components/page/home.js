@@ -4,6 +4,7 @@ import Navbar from '../Navbar/navbar'
 import Register from '../Register/register-modal';
 import { useSelector } from 'react-redux';
 import Blog from '../MainBoard/blogs';
+import Table from '../GroupTable/table';
 
 function Home() {
     const modalReducer = useSelector((state) => state.modalReducer);
@@ -14,6 +15,7 @@ function Home() {
             {modalReducer  ?  <LoginModal /> : ''}
             {modalRegiser ? <Register />    : ''}
             <Blog />
+            <Table />
         </div>
     )
 }
