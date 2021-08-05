@@ -60,7 +60,7 @@ function Navbar() {
             </li>
             <li className={dropdow ? "navlink set-mt" : "navlink"}>
               <a href="#popular" className="link">
-                Популярно
+                Популярно 
               </a>
             </li>
             <li
@@ -77,10 +77,10 @@ function Navbar() {
               <div className={dropdown2 ? "dropdown " : "dropdown set-d-n"}>
                 <ul className="dropdown-links">
                   <li>
-                    <a href="#forus">Eкип</a>
+                    <a href="#forus">Eкипът на DEVBLOG</a>
                   </li>
                   <li>
-                    <a href="#projects">Проекти</a>
+                    <a href="#projects">Проекти на DEVBLOG</a>
                   </li>
                   <li>
                     <a href="#partners">Партьори</a>

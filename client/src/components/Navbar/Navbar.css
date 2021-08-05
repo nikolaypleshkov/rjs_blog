@@ -57,7 +57,11 @@ a{
     justify-content: flex-start;
     margin-top: 10%;
     margin-left: -15%;
+    width: 13vw;
     
+}
+.dropdown-links li a{
+    font-size: 15px;
 }
 ul{
     list-style: none;
@@ -156,9 +160,11 @@ nav{
         position: absolute;
         background: #fff;
         z-index: 30;
+        
     }
     .header-txt{
         margin-left: 0%;
+        margin-top: -80%;
     }
     .navlinks-wrapper{
         display: block;
@@ -169,8 +175,8 @@ nav{
     }
     
     .nav-menu-center {
-      position: relative;
-      top: 0;
+      position: absolute;
+      top: -80px;
       left: 0;
       transform: none;
     }
@@ -197,7 +203,7 @@ nav{
     .nb-btn-group-right{
        flex-wrap: wrap;
        margin-left: -35%;
-       margin-top: 90%;
+       margin-top: 60%;
        justify-content: center;
     }
     .nb-btn-group-right a{
