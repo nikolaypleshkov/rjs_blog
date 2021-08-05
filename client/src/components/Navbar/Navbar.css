@@ -164,7 +164,7 @@ nav{
     }
     .header-txt{
         margin-left: 0%;
-        margin-top: -80%;
+        margin-top: -10%;
     }
     .navlinks-wrapper{
         display: block;
@@ -176,7 +176,7 @@ nav{
     
     .nav-menu-center {
       position: absolute;
-      top: -80px;
+      top: -10px;
       left: 0;
       transform: none;
     }
@@ -189,6 +189,7 @@ nav{
         right:  50px;
         top: 0;
         transform: translate(50%, 50%);
+        z-index: 10;
     }
     .nav-menu-center{
         margin-top: 40%;
