@@ -37,7 +37,7 @@ function Blog() {
         <div className="lookup-btn">
           <button className="btn-layout">
             <span className="btn-txt">
-            Вижте блоговете от днес
+            Виж официалните групи
             </span>
             <br />
             <span className="arrow-down">
