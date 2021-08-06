@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Button, ButtonLogin } from "../Buttons/priamry-btn";
 import { openLogin,closeLogin, openRegister } from "../../actions";
@@ -9,9 +9,11 @@ function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [dropdow, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
+
   const modalReducer = useSelector((state) => state.modalReducer);  
   const modalRegiser = useSelector((regState) => regState.modalRegiser);
   const dispatch = useDispatch();
+
   const user = false;
   const btnGroup = (
     <div
@@ -25,8 +27,8 @@ function Navbar() {
   </div>
   );
   return (
-    <div>
-      <nav className={toggleMenu && !modalReducer && !modalRegiser ? "nav-active" : ""}>
+    <div className="">
+      <nav className={toggleMenu && !modalReducer && !modalRegiser ? "nav-active fixed-top" : "fixed-top"}>
         <div className="nb-title-left">
           <a href="#home">
             <h1 className="header-txt">DEVBLOG</h1>
@@ -90,7 +92,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        {user ? <UserMenu /> : btnGroup}
+        { user ? <UserMenu /> : btnGroup}
       </nav>
       <div
         className={
