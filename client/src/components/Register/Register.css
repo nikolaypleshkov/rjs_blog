@@ -53,6 +53,7 @@ input:focus {
     .rg-card {
         width: 70%;
         height: 60vh;
+        overflow-x: hidden;
     }
     input{
         width: 85%;
