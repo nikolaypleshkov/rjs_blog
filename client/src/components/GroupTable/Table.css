@@ -9,3 +9,59 @@
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.479);
     border-radius: 10px;
 }
+
+.gr-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.gr-form{
+    border-right: 2px solid black;
+    margin-top: 15%;
+}
+.gr-br-n{
+    border-right: 0px;
+}
+
+.gr-title-low{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.join-btn{
+    margin-left: 17rem;
+}
+
+.join-btn-stl{
+    width: 75px;
+    border-radius: 30px;
+    background-color: #304ffe;
+    color: #fff;
+    border: 0px solid rgb(75, 75, 75);
+    height: 45px;
+}
+
+.join-btn-stl:hover{
+    background-color: #5d75fd;
+    transition: 0.3s ease-in;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 1124px) {
+    .table-container{
+        width: 375px;
+        height: 1540px;
+        background-color: #fff;
+        z-index: 3;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.479);
+        border-radius: 10px;
+    }
+
+.gr-form{
+    border-right: 0px;
+    margin-top: 25%;
+}
+}
