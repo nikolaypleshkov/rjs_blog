@@ -93,8 +93,8 @@ nav{
     box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.479);
     z-index: 100;
     width: 100vw;
+   
 }
-
 .nav-menu-center{
     float: none;
     position: absolute;
