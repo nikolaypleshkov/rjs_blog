@@ -27,7 +27,7 @@ function Navbar() {
   </div>
   );
   return (
-    <div className="">
+    <div>
       <nav className={toggleMenu && !modalReducer && !modalRegiser ? "nav-active fixed-top" : "fixed-top"}>
         <div className="nb-title-left">
           <a href="#home">

@@ -136,6 +136,7 @@ nav{
 }
 .nav-active{
     transform: translateX(0px);
+    overflow-x: hidden;
 }
 .navlink a{
     text-decoration: none;
