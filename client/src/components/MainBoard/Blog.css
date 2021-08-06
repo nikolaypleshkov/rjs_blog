@@ -9,6 +9,7 @@
     background-color: rgb(232, 208, 253);
     position: absolute;
     width: 100vw;
+    top: 10%;
   }
   .background-img-container{
     background-image: url('../../img/homepage-header-bg.svg');
@@ -112,6 +113,9 @@
   @media screen and (max-width: 1124px) {
     .blog-container{
       margin-top: 35%;
+    }
+    .wrapper{
+       top: -6%;
     }
 
     .background-img-container{
