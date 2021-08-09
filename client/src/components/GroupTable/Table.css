@@ -45,6 +45,12 @@
     background-color: #5d75fd;
     transition: 0.3s ease-in;
 }
+button:focus{
+    border: 0px;
+}
+button:active{
+    border: 0px;
+}
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 1124px) {
