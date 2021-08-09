@@ -3,6 +3,7 @@ h1{
     font-weight: 600;
     color: #304ffe;
     margin-left: 5%;
+    text-transform: uppercase;
 }
 
 a{
@@ -241,7 +242,6 @@ nav{
         top: 365px;
         transition: 0.3s ease-in;
     }
-
 
   }
 
