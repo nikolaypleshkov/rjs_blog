@@ -5,6 +5,7 @@ import Register from '../Register/register-modal';
 import { useSelector } from 'react-redux';
 import Blog from '../MainBoard/blogs';
 import Table from '../GroupTable/table';
+import Footer from '../Footer/footer';
 
 function Home() {
     const modalReducer = useSelector((state) => state.modalReducer);
@@ -16,6 +17,7 @@ function Home() {
             {modalRegiser ? <Register />    : ''}
             <Blog />
             <Table />
+            <Footer />
         </div>
     )
 }

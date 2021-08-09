@@ -1,0 +1,41 @@
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+
+footer{
+    background-color: #fff !important;
+      position: absolute;
+      top: 100rem;
+      width: 100vw;
+  }
+
+  h6{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(75, 75, 75);
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid #304ffe;
+  }
+
+  .footer-navlink li a{
+      text-decoration: none;
+  }
+
+  .footer-ul-link:hover{
+    color: #304ffe !important;
+    transition: 0.3s ease-in;
+    margin-left: 4px;
+
+}
+
+@media screen and (max-width: 1124px) {
+    footer{
+        margin-top: 30rem;
+    }
+}
