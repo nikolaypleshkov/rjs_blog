@@ -136,7 +136,7 @@ nav{
 }
 .nav-active{
     transform: translateX(0px);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .navlink a{
     text-decoration: none;
@@ -155,6 +155,7 @@ nav{
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 1124px) {
+
     nav{
         width: 70%;
         height: 100vh;
@@ -241,6 +242,7 @@ nav{
         transition: 0.3s ease-in;
     }
 
+
   }
 
   .toggle .line1{
@@ -248,7 +250,8 @@ nav{
   }
 
   .toggle .line2{
-      transform: translateX(150px);
+      transform: translateX(-450px);
+      overflow-x: hidden;
 }
 
 .toggle .line3{

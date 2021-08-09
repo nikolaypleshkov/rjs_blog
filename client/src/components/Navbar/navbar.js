@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Button, ButtonLogin } from "../Buttons/priamry-btn";
 import { openLogin,closeLogin, openRegister } from "../../actions";
