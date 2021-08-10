@@ -71,7 +71,7 @@ function Navbar() {
                   ? "navlink set-mt2 hasDropdown-2"
                   : "navlink hasDropdown-2"
               }
-              onClick={() => setDropdown2(!dropdown2)}
+              onClick={() => {setDropdown2(!dropdown2); setDropdown(false)}}
             >
               <a href="#abour" className="link">
                 За DEVBLOG

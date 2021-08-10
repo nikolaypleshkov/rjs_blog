@@ -209,7 +209,7 @@ nav{
     .nb-btn-group-right{
        flex-wrap: wrap;
        margin-left: -35%;
-       margin-top: 60%;
+       margin-top: 85%;
        justify-content: center;
     }
     .nb-btn-group-right a{
@@ -217,15 +217,18 @@ nav{
     }
 
     .dropdown{
-        top: 90%;
-        width: 90%;
-        left: 0;
+        top: 85%;
+        left: 30px;
+        width: 120%;
         box-shadow: none;
+    }
+    .dropdown-links{
+        width: 120%;
     }
     .dropdown-gr{
         top: 70%;
-        width: 100%;
-        left: 0;
+        width: 170%;
+        left: 30px;
         box-shadow: none;
        
     }
