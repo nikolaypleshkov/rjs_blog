@@ -30,11 +30,11 @@ function LoginModal() {
         <div className="form-data-validation">
           <form action="#">
             <div className="form-group">
-              <p className="lg-data-label">Email</p>
+              <p className="lg-data-label">Имейл</p>
               <input type="email" name="email" id="email" />
             </div>
             <div className="form-group">
-              <p className="lg-data-label">Password</p>
+              <p className="lg-data-label">Парола</p>
               <input type="password" name="pass" id="pass" />
             </div>
             <div className="form-group d-flex justify-content-center">
