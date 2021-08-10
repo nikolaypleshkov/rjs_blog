@@ -39,3 +39,16 @@ footer{
         margin-top: 30rem;
     }
 }
+.min-header{
+    color: #868e96;
+    border-bottom: 0px;
+    font-size: 11pt;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+}
+.hig-header{
+    border-bottom: 2px solid #304ffe;
+}
+.footer-headers{
+    margin-top: -29px;
+}
